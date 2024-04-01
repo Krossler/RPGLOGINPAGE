@@ -1,0 +1,198 @@
+.html{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto 0 auto;
+    padding: 0;
+    height: 100vh;
+    background: url(./Components/landscape.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    user-select: none;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dyd-logo{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    max-height: 192px;
+    max-width: 340;
+}
+
+.menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto 0 auto;
+}
+
+.menu {
+    width: 420px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.158);
+    color: white;
+    padding: 0;
+    margin: 0;
+    border: solid 2px rgb(212, 212, 120);
+    border-radius: 45px;
+    box-shadow: 0px 0px 10px hwb(0 0% 100%);
+    
+}
+
+.menu h1 {
+    font: 42px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.menu .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+    padding: 0;
+}
+
+.input-box input {
+    display: flex;
+    margin: 0 auto 0 auto;
+    width: 380px;
+    height: 100%;
+    padding: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(212, 212, 120);
+    border-width: 2px;
+    border-radius: 40px;
+    font-size: 18px;
+    color: white;
+    padding: 0px 0px 0px 30px;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.input-box input::placeholder{
+    color: white;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.menu .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font: 18px;
+    margin: -15 0 15px;
+    text-decoration: none;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.remember-forgot a{
+    text-decoration: none;
+    color: white;
+}
+
+.remember-forgot a:hover{
+    text-decoration: none;
+    color: rgb(212, 212, 120);
+}
+
+.menu .btn {
+    display: grid;
+    margin: 0 auto 0 auto;
+    width: 400px;
+    height: 45px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 45px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    font-size: 16px;
+    color: grey;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 20px;
+}
+
+.menu .btn:hover{
+    background-color: rgb(212, 212, 120);
+    color: white;
+}
+
+.btn p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.menu .register-link {
+    font: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link a{
+    text-decoration: none;
+    color: white;
+}
+
+.register-link a:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 137);
+}
+
+@media screen and (max-width:1100px) {
+
+
+    .menu-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 150px auto 0 auto;
+    }
+
+    .dyd-logo{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 0 auto;
+        max-height: 128px;
+        max-width: 426px;
+    }
+
+}
+
+@media screen and (max-height:800px) {
+
+
+    .menu-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px auto 0 auto;
+    }
+}
