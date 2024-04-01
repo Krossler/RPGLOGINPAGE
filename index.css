@@ -88,19 +88,28 @@ body {
     position: absolute;
     right: 20px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
     font-size: 20px;
 }
 
 .menu .remember-forgot{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font: 18px;
-    margin: -15 0 15px;
+    font-weight: 400;
+    margin: -15px 0 15px;
     text-decoration: none;
 }
 
+.remember-forgot label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .remember-forgot label input {
+    height: 18px;
     accent-color: #fff;
     text-decoration: none;
     cursor: pointer;
@@ -113,7 +122,7 @@ body {
 
 .remember-forgot a:hover{
     text-decoration: none;
-    color: rgb(212, 212, 120);
+    color: rgb(255, 255, 137);
 }
 
 .menu .btn {
@@ -127,7 +136,7 @@ body {
     border-radius: 45px;
     box-shadow: 0 0 10px rgb(0, 0, 0);
     font-size: 16px;
-    color: grey;
+    color: rgb(88, 88, 88);
     font-weight: 400;
     cursor: pointer;
     font-family: "Pixelify Sans", sans-serif;
@@ -135,8 +144,8 @@ body {
 }
 
 .menu .btn:hover{
-    background-color: rgb(212, 212, 120);
-    color: white;
+    background-color: rgb(255, 255, 137);
+    color: black;
 }
 
 .btn p {
@@ -185,6 +194,90 @@ body {
 
 }
 
+@media screen and (max-width:900px) {
+
+
+    .menu-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px auto 0 auto;
+    }
+
+    .menu {
+        margin-top: 80px;
+        max-width: 350px;
+    }
+
+    .input-box input {
+        width: 300px;
+    }
+
+    .menu .btn {
+        width: 280px;
+    }
+
+    .dyd-logo{
+        max-height: 106px;
+        max-width: 355px;
+    }
+
+}
+
+
+
+@media screen and (max-width:700px) {
+
+    .menu {
+        margin-top: 0px;
+        max-width: 350px;
+    }
+
+    .input-box input {
+        width: 300px;
+    }
+
+    .menu .btn {
+        width: 280px;
+    }
+
+    .dyd-logo{
+        max-height: 106px;
+        max-width: 355px;
+    }
+
+}
+
+@media screen and (max-width:300px) {
+
+
+    .menu-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 0 auto;
+    }
+
+    .menu {
+        margin-top: 0px;
+        max-width: 240px;
+    }
+
+    .input-box input {
+        width: 200px;
+    }
+
+    .menu .btn {
+        width: 200px;
+    }
+
+    .dyd-logo{
+        max-height: 106px;
+        max-width: 250px;
+    }
+
+}
+
 @media screen and (max-height:800px) {
 
 
@@ -193,5 +286,20 @@ body {
         justify-content: center;
         align-items: center;
         margin: 100px auto 0 auto;
+    }
+}
+
+@media screen and (max-height:680px) {
+
+    .dyd-logo{
+        max-height: 116px;
+        max-width: 387px;
+    }
+
+    .menu-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto 0 auto;
     }
 }
